@@ -1,0 +1,43 @@
+{
+  "name": "techworking",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A social network for techies to share their skills and expertise",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranka23/techworking.git"
+  },
+  "keywords": [
+    "social",
+    "network",
+    "techies",
+    "developer",
+    "developer",
+    "skills"
+  ],
+  "author": "Nikhil Ranka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ranka23/techworking/issues"
+  },
+  "homepage": "https://github.com/ranka23/techworking#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.5",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
