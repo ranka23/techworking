@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../store/actions/authActions";
-import TextGroup from "../common/TextGroup";
+import TextInputGroup from "../common/TextInputGroup";
 
 class Login extends Component {
   constructor() {
@@ -60,7 +60,7 @@ class Login extends Component {
                 Sign in to your TechWorking account
               </p>
               <form onSubmit={this.onSubmit}>
-                <TextGroup
+                <TextInputGroup
                   placeholder="Email Address"
                   name="email"
                   type="email"
@@ -68,7 +68,7 @@ class Login extends Component {
                   onChange={this.onChange}
                   error={errors.email}
                 />
-                <TextGroup
+                <TextInputGroup
                   placeholder="Password"
                   name="password"
                   type="password"

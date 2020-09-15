@@ -2,6 +2,18 @@ img {
   width: 100%;
 }
 
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+
 .landing {
   position: relative;
   background: url('./assets/showcase.jpg') no-repeat;

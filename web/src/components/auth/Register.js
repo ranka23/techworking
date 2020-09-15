@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withRouter } from 'react-router-dom'
-import classnames from "classnames";
 import { connect } from "react-redux";
 import { registerUser } from "../../store/actions/authActions";
-import TextGroup from "../common/TextGroup";
+import TextInputGroup from "../common/TextInputGroup";
 
 class Register extends Component {
   constructor() {
@@ -62,7 +61,7 @@ class Register extends Component {
                 Create your TechWorking account
               </p>
               <form onSubmit={this.onSubmit}>
-                <TextGroup
+                <TextInputGroup
                   placeholder="Name"
                   name="name"
                   type="text"
@@ -70,7 +69,7 @@ class Register extends Component {
                   onChange={this.onChange}
                   error={errors.name}
                 />
-                <TextGroup
+                <TextInputGroup
                   placeholder="Email Address"
                   name="email"
                   type="email"
@@ -79,7 +78,7 @@ class Register extends Component {
                   error={errors.email}
                   info="Use your Gravatar email address if you want a profile image"
                 />
-                <TextGroup
+                <TextInputGroup
                   placeholder="Password"
                   name="password"
                   type="password"
@@ -87,7 +86,7 @@ class Register extends Component {
                   onChange={this.onChange}
                   error={errors.password}
                 />
-                <TextGroup
+                <TextInputGroup
                   placeholder="Confirm Password"
                   name="confirmPassword"
                   type="password"

@@ -17,7 +17,7 @@ const validateProfile = (data) => {
   }
 
   if (Validator.isEmpty(data.skills)) {
-    errors.status = "Add at least one skill";
+    errors.skills = "Add at least one skill";
   }
 
   if (!Validator.isLength(data.handle, { min: 2, max: 40 })) {
