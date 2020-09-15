@@ -1,7 +1,7 @@
 import Validator from "validator";
 import isEmpty from "../utils/isEmpty.js";
 
-const validateLogin = (data) => {
+const validateRegister = (data) => {
   let errors = {};
 
   data.name = !isEmpty(data.name) ? data.name : "";
@@ -49,4 +49,4 @@ const validateLogin = (data) => {
   };
 };
 
-export default validateLogin;
+export default validateRegister;
