@@ -47,15 +47,13 @@ passport.use(
   })
 );
 
-app.get("/", (req, res) => res.send("Hello World from Server"));
-
 app.use("/api/users", users);
 app.use("/api/profile", profile);
 app.use("/api/posts", posts);
 
 // Serve static asset
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("../web/build"));
+  app.use(express.static("web/build"));
 
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
