@@ -14,9 +14,28 @@ select::-ms-expand {
   display: none;
 }
 
+#root {
+  min-height: 100vh;
+  height: fit-content;
+}
+
+.App {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .landing {
   position: relative;
-  background: url('./assets/showcase.jpg') no-repeat;
+  background: url("./assets/showcase.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;

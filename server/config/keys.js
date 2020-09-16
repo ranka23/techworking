@@ -1,4 +1,11 @@
-export default {
-  mongoURI: `mongodb+srv://marcus:marcus@teachworking.j5pc3.mongodb.net/teachworking?retryWrites=true&w=majority`,
-  secretOrKey: `secret`,
-};
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
+let keys
+if (process.env.NODE_ENV === "production") {
+  keys = require("./keys_prod.cjs")
+} else {
+  keys = require("./keys_dev.cjs");
+}
+
+export default keys;
