@@ -1,5 +1,7 @@
 # TechWorking - Networking for Techies
-A platform for developers to connect and share their skills, expertise and experience. This is a Full Stack MERN (MongoDB, Express, React, Node) project, deployed on Hereko. Check it out here -> https://techworking.herokuapp.com/
+A platform for developers to connect and share their skills, expertise and experience. This is a Full Stack MERN (MongoDB, Express, React, Node) project, deployed on Hereko. 
+
+Check it out here -> https://techworking.herokuapp.com/
 
 ### Features of the Application
 
