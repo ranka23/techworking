@@ -5,12 +5,13 @@
   "description": "A social network for techies to share their skills and expertise",
   "main": "server.js",
   "scripts": {
-    "client-install": "cd .. && cd web && yarn",
-    "client": "cd .. && cd web && yarn start",
-    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "client-install": "yarn --prefix web",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false cd .. && cd web && yarn && yarn build"
+    "client": "cd web && yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "heroku-postbuild":
+      "NPM_CONFIG_PRODUCTION=false yarn --prefix web && yarn build --prefix web"
   },
   "repository": {
     "type": "git",
@@ -45,5 +46,9 @@
   "devDependencies": {
     "concurrently": "^5.3.0",
     "nodemon": "^2.0.4"
+  },
+    "engines": {
+    "node": "14.8.0",
+    "yarn": "1.22.5"
   }
 }
