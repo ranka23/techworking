@@ -46,7 +46,6 @@ $ cd into 'web'.
 $ run 'yarn' to install node modules for web.
 $ cd back into root folder.
 $ run 'yarn dev' to concurrently start the server and the application.
-$ run 'yarn dev' for development environment
 
 ```
 
